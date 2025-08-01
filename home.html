@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="./homestyle.css">
+</head>
+<body>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    <div class="sidebar hidden">
+        <img src="../Landing page/website-images/freepik__background__62997.png" width="100px" height="" style="margin-left: 8%;" class="dash">
+        <ul>
+
+            <div class="icon-li"><img src="../Dashboard/dashboard-images/4.png" width="30px" height="30px" style=" filter: brightness(0) invert(1);" class="icon">
+            <a href="../Landing page/index.html"> <li>Home</li></a>
+            </div>
+            <div class="icon-li">
+            <img src="../Dashboard/dashboard-images/1.png" width="30px" height="30" style=" filter: brightness(0) invert(1);" class="icon">
+            <a href="home.html"><li>Dashboard</li></a>
+            </div>
+            <div class="icon-li"><img src="../Dashboard/dashboard-images/2.png" width="30px" height="30px" style=" filter: brightness(0) invert(1);" class="icon">
+            <li><a href="course.html">Courses</a></li>
+            </div>
+            <div class="icon-li"><img src="../Dashboard/dashboard-images/3.png" alt="" style=" filter: brightness(0) invert(1);" class="icon">
+            <li>Tasks</li>
+            </div>
+            <div class="icon-li"><img src="../Dashboard/dashboard-images/5.png" width="30px" height="30px" style=" filter: brightness(0) invert(1);" class="icon">
+            <li>Notification</li>
+            </div>
+            <div class="icon-li"><img src="../Dashboard/dashboard-images/6.png" width="30px" height="30" style=" filter: brightness(0) invert(1);" class="icon">
+            <li>Settings</li>
+            </div>
+            <div class="icon-li"><img src="../Dashboard/dashboard-images/7.png" width="30px" height="30px" style=" filter: brightness(0) invert(1);" class="icon">
+            <li>Logout</li>
+            </div>
+            <div style="margin-top: 40%;" class="icon-li"><img src="../Dashboard/dashboard-images/8.png" width="30px" height="30px" style=" filter: brightness(0) invert(1);" class="icon" >
+            <li>Help</li>
+            </div>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            
+        <input list="explore-course" type="text" placeholder="Explore courses...">
+        <datalist id="explore-course">
+            <option value="Intoduction Web Development">
+            <option value="Animation 3D">
+            <option value="Grapic Designing">
+            <option value="Machine Learning Fundamentals">
+            <option value="Introduction to Artificial Intelligence">
+            <option value="cyber Security">
+            <option value="Database">
+        </datalist>
+        
+            <div class="profile"><img src="../Dashboard/dashboard-images/girl.png" alt="" width="30px" height="30px" style=" border-radius: 10px; background-color:  wheat ;"> Student </div>
+        </header>
+        <section class="courses">
+            <div class="btn-cor">
+            <h2>Courses</h2>
+            <button class="all-cor"><h4>All Courses  <img src="https://cdn-icons-png.flaticon.com/128/8276/8276610.png" width="20px" height="auto" ></h4></button>
+        </div>
+        <br>
+            <div class="course-list">
+                <div class="course">
+                    <img src="../Dashboard/dashboard-images/download.jpg" width="50%" height="50%" class="d-img">
+                    <h3 style="  text-shadow: 0px 1px 1px #000, 3px 3px 5px rgb(38, 117, 163); margin-bottom: 8%;">Introduction 3D Design</h3>
+                    <div class="btn-name">
+                    <div class="h5-cor">
+                        <img src="../Dashboard/dashboard-images/tutor.jpg" style="border-radius: 50%;" alt="" width="50px" height="50px" >
+                        <h5>Nora, Layla</h5>
+                    </div>
+                        <button class="start-cor"><strong><em>Start</em></strong></button>
+                   </div> 
+                    
+                </div>
+                <div class="course">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2S0qL38atJ9m1FUG2-vg9kTrfirdZiy7wOQ&s" width="50%" height="50%" class="d-img">
+                   <h3 style=" margin-bottom: 8%; text-shadow: 0px 1px 1px #000, 3px 3px 5px rgb(38, 117, 163); ">Introduction UX Designer</h3>
+                   <div class="btn-name">
+                    <div class="h5-cor">
+                        <img src="../Dashboard/dashboard-images/tutor 2.jpg" style="border-radius: 50%;" alt="" width="50px" height="50px" >
+                        <h5>Morgana</h5>
+                    </div>
+                        <button class="start-cor"><strong><em>Start</em></strong> </button>
+                   </div> 
+                </div>
+                <div class="course">
+                    <img src="https://img.freepik.com/free-vector/organic-flat-motion-graphics-landing-page-template_23-2148897367.jpg?uid=R187304716&ga=GA1.1.1597688795.1726405217&semt=ais_hybrid" class="d-img" width="50%" height="50%" >
+                 <h3 style="margin-bottom: 8%;  text-shadow: 0px 1px 1px #000, 3px 3px 5px rgb(38, 117, 163); "> Motion Graphic Learning</h3> 
+                 <div class="btn-name">
+                    <div class="h5-cor">
+                        <img src="../Dashboard/dashboard-images/tutor 3.jpg" style="border-radius: 50%; " alt="" width="50px" height="50px" >
+                        <h5>Xanthe</h5>
+                    </div>
+                        <button class="start-cor"><strong><em>Start</em></strong></button>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="learning-section">
+            <div class="left">
+                
+                <div class="course-subscribe">
+                    <div class="course">
+                        
+                        <div class="course-content">
+                            <div class="hello">
+                            <div><img src="../Dashboard/dashboard-images/e40f595ba3eec72137d47e20911b6ece.jpg" class="motion" width="90%" height="90%"></div>
+                            
+                        <div><strong><em><h2>Continue Learning</h2></em></strong> <br><br>
+                             <h3 style="  text-shadow: 0px 1px 1px #000, 3px 3px 5px rgb(38, 117, 163); "><strong><em> Web Development</em></strong></h3><br>
+                            <progress id="animation" max="100" value="70">70%</progress>
+                            <br> <br><br>
+                            <a href="../Dashboard/html.basis.html" class="remark">😊 Learn Continue Keep It Up 😊</a>
+                            <div>
+                        </div>
+                       </div>
+                    </div>
+                    </div>
+                    <section class="subscribe">
+                        <br><br>
+                        <h3>Special for Intrested Candidates!</h3>
+                        <br><br>
+                        <button>Subscribe Now!🔔</button>
+                    </section>
+            </div>
+        </section>
+
+
+    
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

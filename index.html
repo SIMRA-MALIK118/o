@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Background Hero with Navbar</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="./website.css">
+</head>
+<body>
+  <!-- navbar section -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../Landing page/website-images/freepik__background__62997.png" alt="Logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="nav-items" id="nav-items">
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#whychooseus">Why choose us?</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="signup-btn">Create Account</button>
+    </div>
+  </nav>
+
+
+<!-- hero section -->
+  <div class="hero" id="home">
+    <video autoplay loop muted playsinline>
+      <source src="https://videos.pexels.com/video-files/6964016/6964016-sd_640_360_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1><span style="color:#FFD700;">Learn New Skills</span><br><span style="color:#FFD700;">Advance your Career</span><br><span style="color:#FFD700;" class="text"></span> <span style="color:#FFD700;" class="text"></span> </h1>
+      <p class="hero-subtext"><b>Unlock your potential — start learning today with flexible, affordable, and expert-led content.</b></p>
+      <button class="sign-in"> Sign in</button>
+
+      <!-- hidde form -->
+    <form id="signInForm" class="sign-in-form">
+    <h3>Sign In Form</h3>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Submit</button>
+  </form>
+
+    </div>
+  </div>
+<!-- 
+  about section -->
+  <section class="about-section" id="about">
+    
+    <div class="about-container">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>We are dedicated to empowering individuals through flexible and accessible online learning. Whether you’re a beginner or looking to upskill, our courses are designed by experts to help you reach your goals anytime, anywhere.</p>
+        <p>With a growing community of learners and instructors, we ensure a supportive environment for personal and professional development.</p>
+        <a href="../Landing page/learnmore.html"><button class="learn-more-btn"> Learn More</button></a>
+      </div>
+    </div>
+  </section>
+
+
+<!-- service section -->
+<header id="services">
+    <h1>Our Services</h1>
+   <p>Expert solutions designed to help you grow and succeed</p>
+      <br><br>
+     ●──────────── Learn free coding ───────────●
+    
+  </header>
+
+  <section class="services-section">
+    <div class="services-grid">
+      <div class="service-box">
+        <div class="service-icon">📚</div>
+        <div class="service-title">Online Courses</div>
+        <div class="service-desc">Flexible, self-paced courses taught by industry professionals to help you upskill efficiently.</div>
+      </div>
+      <div class="service-box">
+        <div class="service-icon">💻</div>
+        <div class="service-title">Web Development</div>
+        <div class="service-desc">We design and develop beautiful, responsive websites tailored to your goals and brand.</div>
+      </div>
+      <div class="service-box">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">Graphic Design</div>
+        <div class="service-desc">Creative visual designs, branding, and logos that help you stand out and connect with your audience.</div>
+      </div>
+      <div class="service-box">
+        <div class="service-icon">📈</div>
+        <div class="service-title">Digital Marketing</div>
+        <div class="service-desc">Boost your reach through effective social media, SEO, and ad campaigns tailored to your niche.</div>
+      </div>
+      <div class="service-box">
+        <div class="service-icon">📊</div>
+        <div class="service-title">Machine Learning Fundamentals</div>
+        <div class="service-desc">Machine Learning Fundamentals cover the basics of algorithms that enable computers to learn from data and improve over time.</div>
+      </div>
+      <div class="service-box">
+        <div class="service-icon">🛡️</div>
+        <div class="service-title">Cyber Security</div>
+        <div class="service-desc">Cyber security protects your data and devices from unauthorized access and threats.</div>
+      </div>
+       <div class="service-box">
+        <div class="service-icon">🤖</div>
+        <div class="service-title">AI Marketing</div>
+        <div class="service-desc">Leverage artificial intelligence to automate, optimize, and elevate your marketing strategies with smart tools and insights.</div>
+      </div>
+      <div class="service-box">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">AI for Business</div>
+        <div class="service-desc">Empower your business operations with AI-driven insights, automation, and data intelligence to enhance productivity and innovation.</div>
+      </div>
+       <div class="service-box">
+        <div class="service-icon">🖌️</div>
+        <div class="service-title">Ui/Ux Designing</div>
+        <div class="service-desc">Design intuitive and delightful user experiences with modern interfaces focused on usability and aesthetic appeal.</div>
+      </div>
+    </div>
+  </section>
+
+    <!-- why choose us section-->
+    
+   <section class="why-choose-us" id="whychooseus">
+  <div class="section-header">
+    <span class="line"></span>
+    <span class="title"><h1>Why Choose Us?</h1></span>
+    <span class="line"></span>
+  </div>
+
+  <div class="why-container">
+    <!-- Left Content -->
+    <div class="why-text">
+     
+      <h2>
+        We Go to The Extra Help You Learn Programming!
+      </h2>
+      <p class="desc">
+        Our platform provides 100% free programming courses tailored for beginners to advanced learners — no sign-up or credit card required.
+      </p>
+
+      <div class="feature">
+        <div class="icon">💻</div>
+        <div>
+          <h4>Free Coding Courses</h4>
+          <p>Access high-quality tutorials and projects in HTML, CSS, JavaScript, Python, and more — completely free.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="icon">🎯</div>
+        <div>
+          <h4>Beginner Friendly</h4>
+          <p>Our structured paths and hands-on challenges help you learn step-by-step without getting overwhelmed.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="icon">🚀</div>
+        <div>
+          <h4>No Sign-Up Needed</h4>
+          <p>Start learning instantly without logging in or sharing your data. Just click and begin your journey.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="why-image">
+      <img src="../Landing page/website-images/download.jpg" alt="Student learning programming" />
+    </div>
+  </div>
+</section>
+
+<!-- contact sectrion -->
+  <section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-heading">
+      <h2>Contact Us</h2>
+      <br><br>
+      <p>Have a question or suggestion? We'd love to hear from you!</p>
+    </div>
+
+    <div class="contact-content">
+      <!-- Left Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <br>
+        <p>Email us anytime we usually respond within 24 hours.</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="">maliksimra033@gmail.com</a></li>
+          <br>
+          <li><strong>Follow us:</strong></li>
+        </ul>
+        <br>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/16PuDmeyD4/"><i class="fab fa-facebook" style="color:#333; font-size:24px;"></i><a>
+          <a href="https://github.com/SIMRA-MALIK118/portfolio-website"><i class="fab fa-github" style="color:#333; font-size:24px;"></i></a>
+          <a href="https://www.instagram.com/cyco_girl123?igsh=MTJsdWlzb290OGZkdg=="><i class="fab fa-instagram" style="color:#333; font-size:24px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" id="con-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+    <!-- footer section -->
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>Free Programming Courses</h3>
+      <br>
+      <p>Your go-to platform for learning web development, programming, and design — completely free!</p>
+    </div>
+
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://github.com/SIMRA-MALIK118/portfolio-website" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/cyco_girl123?igsh=MTJsdWlzb290OGZkdg==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/16PuDmeyD4/"><i class="fab fa-facebook"></i></a>
+        <a href="maliksimra033@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 FreeCodeCourses. All rights reserved.</p>
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+  </div>
+</footer>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-items").classList.toggle("active");
+    }
+  
+  document.getElementById("con-btn").onsubmit = function(e) {
+    e.preventDefault(); // stop form from refreshing page
+    alert("Message sent successfully!");
+    this.reset(); // clear form
+  };
+
+ // Initialize Typed.js after the DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+const typed = new Typed('.text', {
+          strings: [" Anytime",  " Anywhere"],
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true
+        });
+    });
+
+    // arrow return top
+     window.onscroll = function() {
+    const backToTop = document.querySelector('.back-to-top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+};
+
+// sign in hide form
+ const signInBtn = document.querySelector(".sign-in");
+    const form = document.getElementById("signInForm");
+
+    signInBtn.addEventListener("click", () => {
+      form.style.display = "block";
+    });
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // page reload hone se rokta hai
+
+      const username = document.getElementById("username").value;
+      const email = document.getElementById("email").value;
+
+      // Redirect to dashboard
+      window.location.href = "../Dashboard/home.html"; // ← yahan apne dashboard page ka path likhna
+    });
+  </script>
+</body>
+</html>
+

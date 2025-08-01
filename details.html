@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Details</title>
+  <link rel="stylesheet" href="./details.css">
+</head>
+<body>
+
+<h2 id="page-title">Course Details</h2>
+
+<div class="container" id="course-container">
+  <!-- Content will be injected by JS -->
+
+</div>
+<div id="blur-bg" class="blur-background" style="display: none;"></div>
+<!-- Form (initially hidden) -->
+
+<div id="enroll" style="display: none; position: fixed;" >
+
+    <span id="close-btn" style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px;">&times;</span>
+  
+  <form id="enroll-form">
+    <label for="fname">First Name</label>
+    <input type="text" placeholder="Your name"  required>
+
+    
+    <label for="lname">Last Name</label>
+    <input type="text" placeholder="Your Last name" required>
+
+    
+    <label for="email">Email</label>
+    <input type="text" placeholder="Email" required>
+    
+    
+    <label for="country">Country</label>
+    <input type="text" placeholder="country name" required>
+
+
+    <label for="pname">contact</label>
+    <input type="text" placeholder="contact number" required>
+
+
+    <label for="course" >course</label>
+    <select name="course" id="course" required>
+    <option value="Web development">Web development</option>
+    <option value="Graphic Designing">Graphic Designing</option>
+    <option value="Machine Learning">Machine Learning</option>
+    <option value="Cyber security">Cyber security</option>
+    <option value="UI/UX">UI/UX Designing</option>
+    <option value="business">AI for Business</option>
+    <option value="Marketing">AI Marketing</option>
+    <option value="Digital">Digital Marketing</option>
+  </select>
+   
+  <input type="submit" value="Submit" id="submit">
+  </form>
+</div>
+
+<script>
+   
+  const courses = {
+    "web-dev": {
+      name: "Web Development Bootcamp",
+      duration: "8 Weeks",
+      tasks: 20,
+      projects: 3,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "This course covers HTML, CSS, JavaScript, and backend development.",
+      image: "",
+      instructor: {
+      name: "Ms. Ayesha Khan",
+      experience: "7+ years",
+      specialization: "React, Node.js, MongoDB",
+      about: "A passionate developer who loves teaching real-world web development.",
+        image: "./details-images/t-1.jpg"
+      }
+    },
+    "graphic-design": {
+      name: "Graphic Design Mastery",
+      duration: "6 Weeks",
+      tasks: 15,
+      projects: 2,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "Master Photoshop, Illustrator, and design fundamentals.",
+      image: "",
+      instructor: {
+      name: "Mr. Adil Raza",
+      experience: "5 years",
+      specialization: "Photoshop, Illustrator, UI/UX",
+      about: "Design expert with a flair for creativity and clean aesthetics.",
+      image: "./details-images/t-2.jpg"
+      }
+    },
+    "Machine Learning": {
+      name: "Machine Learning Fundamentals",
+      duration: "12 Weeks",
+      tasks: 15,
+      projects: 2,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "Learn the fundamentals of Machine Learning to build intelligent systems!",
+      image: "",
+      instructor: {
+      name: "Mr. Shazman Ali",
+      experience: "6 years",
+      specialization: "Artificial Intelligence",
+      about: "Design expert with a flair for creativity and clean aesthetics.",
+      image: "./details-images/t-3.jpg"
+      }
+    },
+    "Cyber Security": {
+      name: "Cyber Security",
+      duration: " 6 Months",
+      tasks: 15,
+      projects: 2,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "Protect systems and data by mastering the essentials of Cyber Security!",
+      image: "",
+      instructor: {
+      name: "Ms. Hoor khan ",
+      experience: "4 years",
+      specialization: "Cyber Security",
+      about: "Expert in Protective System or Data By Cyber Security.",
+      image: "./details-images/t-4.jpg"
+      }
+    },
+    "Ui/Ux Designing": {
+      name: "Ui/Ux Designing",
+      duration: " 4 Months",
+      tasks: 5,
+      projects: 3,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "Design intuitive and engaging user experiences with UI/UX principles.",
+      image: "",
+      instructor: {
+      name: "Mr. Zulqarnain Rajput ",
+      experience: "3 years",
+      specialization: "Ui/Ux Designing",
+      about: "Expert in Designing or Creativity By UI/UX.",
+      image: "./details-images/t-5.jpg"
+      }
+    },
+    "Ai For Business": {
+      name: "Ai For Business",
+      duration: " 1 Year",
+      tasks: 10,
+      projects: 4,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "Leverage AI to optimize business processes and drive innovation!",
+      image: "",
+      instructor: {
+      name: "Mr. faisal Shah ",
+      experience: "5 years",
+      specialization: "Ai For Business",
+      about: "Leverage AI to optimize business processes and drive innovation.",
+      image: "./details-images/6.jpg"
+      }
+    },
+    "Ai Marketing": {
+      name: "Ai Marketing",
+      duration: " 3 Months",
+      tasks: 5,
+      projects: 2,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "Utilize AI in marketing to personalize campaigns and boost engagement.",
+      image: "",
+      instructor: {
+      name: "Mr. Orangzaib Rajput ",
+      experience: "3 years",
+      specialization: "Ai Marketing",
+      about: "Expert in AI Marketing to Campaigns.",
+      image: "./details-images/t-7.jpg"
+      }
+    },
+    "Digital Marketing": {
+      name: "Digital Marketing",
+      duration: " 3 Months",
+      tasks: 5,
+      projects: 2,
+      Effort:"2-5 Hours Per Week",
+      Language: "English",
+      VedioTranscript: "English",
+      Certification: "Free Certification",
+      description: "Master Digital Marketing to grow brands and reach the right audience.",
+      image: "search icon.png",
+      instructor: {
+      name: "Ms.Safiya Malik",
+      experience: "3 years",
+      specialization: "Digital Marketing",
+      about: "Expert in Digital Marketing , Campaigns to reach audience.",
+      image: "./details-images/t-8.jpg",
+      
+      }
+    },
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const courseId = params.get("course");
+  const course = courses[courseId];
+
+  if (!course) {
+    document.getElementById("course-container").innerHTML = "<p>Course not found.</p>";
+  } else {
+    document.getElementById("page-title").textContent = course.name;
+
+    document.getElementById("course-container").innerHTML = `
+      <div>
+        <h3>${course.name}</h3>
+        <p><strong>Duration:</strong> ${course.duration}</p>
+        <p><strong>Tasks:</strong> ${course.tasks}</p>
+        <p><strong>Projects:</strong> ${course.projects}</p>
+        <p><strong>Effort:</strong> ${course.Effort}</p>
+        <p><strong>Language:</strong> ${course.Language}</p>
+        <p><strong>Video Transcript:</strong> ${course.VedioTranscript}</p>
+        <p><strong>Certified:</strong> ${course.Certification}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+      </div>
+      <div class="instructor-card">
+        <img src="${course.instructor.image}" alt="Instructor">
+        <h4>${course.instructor.name}</h4>
+        <p><strong>Experience:</strong> ${course.instructor.experience}</p>
+        <p><strong>Specialization:</strong> ${course.instructor.specialization}</p>
+        <p><strong>About:</strong> ${course.instructor.about}</p>
+        
+      </div>
+       <button id="enroll-btn">Enroll Now</button>
+    `;  
+      
+      
+   
+    const btn = document.getElementById('enroll-btn');
+    const enrollDiv = document.getElementById('enroll');
+    const blurBg = document.getElementById('blur-bg');
+    const form = document.getElementById('enroll-form');
+    const closeBtn = document.getElementById('close-btn');
+    
+    // Show form on button click
+    btn.onclick = () => {
+      enrollDiv.style.display = 'block';
+      blurBg.style.display = 'block';
+    };
+    
+      // Close form on X click
+  closeBtn.onclick = () => {
+    enrollDiv.style.display = 'none';
+    blurBg.style.display = 'none';
+  };
+
+    // Show alert on form submit
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop actual submission
+      alert("Form submitted successfully!");
+
+
+       // Optionally hide form and blur after submit
+    enrollDiv.style.display = 'none';
+    blurBg.style.display = 'none';
+    });
+     }
+      
+  
+</script>
+
+</body>
+</html>
